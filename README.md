@@ -6,6 +6,24 @@ Main: This page will be designed per the design files matching the view and func
 
 About Us: This page will be designed without a design files, but using the style that has been laid out in previous pages.
 
+###########---------Project Checklist-----------#################
+
+##MAIN PAGE##
+
+[X]Set up the basic Element structure
+[ ]Get the Basic layout Styles finished
+[ ]Fine tune the CSS styles
+[ ]Fine tune the Responsiveness
+[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
+
+##ABOUT PAGE##
+
+[ ]Set up the basic Element structure
+[ ]Get the Basic layout Styles finished
+[ ]Fine tune the CSS styles
+[ ]Fine tune the Responsiveness
+[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
+
 #Bookr PROJECT NAME
 
 Bookr
