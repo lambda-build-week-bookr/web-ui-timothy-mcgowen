@@ -10,19 +10,19 @@ About Us: This page will be designed without a design files, but using the style
 
 ##MAIN PAGE##
 
-[X]Set up the basic Element structure
-[ ]Get the Basic layout Styles finished
-[ ]Fine tune the CSS styles
-[ ]Fine tune the Responsiveness
-[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
+* [X]Set up the basic Element structure
+* [ ]Get the Basic layout Styles finished
+* [ ]Fine tune the CSS styles
+* [ ]Fine tune the Responsiveness
+* [ ]Final touches, Connect any links, fix any bugs, test of several browsers.
 
 ##ABOUT PAGE##
 
-[ ]Set up the basic Element structure
-[ ]Get the Basic layout Styles finished
-[ ]Fine tune the CSS styles
-[ ]Fine tune the Responsiveness
-[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
+* [ ]Set up the basic Element structure
+* [ ]Get the Basic layout Styles finished
+* [ ]Fine tune the CSS styles
+* [ ]Fine tune the Responsiveness
+* [ ]Final touches, Connect any links, fix any bugs, test of several browsers.
 
 #Bookr PROJECT NAME
 
