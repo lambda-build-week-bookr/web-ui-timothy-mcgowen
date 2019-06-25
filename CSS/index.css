@@ -349,14 +349,10 @@ template {
 * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-body {
-  background-color: #c03268;
-}
 .page-wrapper {
   margin-right: auto;
   margin-left: auto;
-  min-width: 375px;
-  width: 375px;
+  max-width: 375px;
   background-color: #ffffff;
 }
 .banner {
@@ -515,7 +511,7 @@ button {
   border-bottom: 1px solid #6c6c6c;
 }
 .section-3 p {
-  color: #063A65;
+  color: #0a63ad;
   padding: 10px 0 50px 0;
 }
 #quick-fix {
