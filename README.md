@@ -15,13 +15,6 @@ _[X]Get the Basic layout Styles finished
 _[ ]Fine tune the CSS styles
 _[ ]Fine tune the Responsiveness \*[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
 
-##ABOUT PAGE##
-
-_[ ]Set up the basic Element structure
-_[ ]Get the Basic layout Styles finished
-_[ ]Fine tune the CSS styles
-_[ ]Fine tune the Responsiveness \*[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
-
 #Bookr PROJECT NAME
 
 Bookr
