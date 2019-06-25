@@ -364,6 +364,10 @@ template {
   margin: 40px 20px;
   border-bottom: 2px solid #b9b9b9;
 }
+.black_line_footer {
+  margin: 25px 20px;
+  border-bottom: 2px solid #b9b9b9;
+}
 button {
   background-color: #ff8533;
   border: none;
@@ -534,7 +538,7 @@ button {
 }
 .social-card {
   width: 100%;
-  padding: 35px;
+  padding: 35px 35px 0 35px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -542,6 +546,7 @@ button {
 }
 .social-card .social-icons img {
   width: 45px;
+  fill: red;
 }
 .copyright {
   display: flex;
@@ -554,4 +559,6 @@ button {
 }
 .copyright p {
   font-size: 0.9rem;
+  text-align: right;
+  color: #464646;
 }
