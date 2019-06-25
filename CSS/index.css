@@ -341,6 +341,9 @@ template {
 * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+body {
+  background-color: #fef6eb;
+}
 #page-wrapper {
   margin-right: auto;
   margin-left: auto;
@@ -351,6 +354,12 @@ template {
 .banner {
   background-image: url(../assets/img/Hero-banner-image.png);
   height: 377px;
+}
+.black_line {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-bottom: 1px solid #464646;
+  height: 25px;
 }
 .nav {
   height: 56px;
@@ -382,4 +391,81 @@ template {
 .nav ul a {
   color: white;
   text-decoration: none;
+}
+.header-content {
+  background-color: rgba(0, 0, 50, 0.5);
+  color: white;
+  margin-top: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.header-content .h-top {
+  width: 50%;
+}
+.header-content .h-top h1 {
+  font-size: 2rem;
+}
+.header-content button {
+  background-color: #ff8533;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 10px;
+}
+.below-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px 0;
+  margin: 25px auto;
+  color: #464646;
+}
+.below-header h2 {
+  font-size: 1.4rem;
+  padding-top: 20px;
+}
+.below-header p {
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+.card_top {
+  color: white;
+}
+.card_top h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 56px;
+  background-color: rgba(40, 40, 187, 0.5);
+  padding-left: 15px;
+}
+.card_top .img_1 {
+  background-image: url(../assets/img/Read-Reviews-Image.png);
+  height: 250px;
+}
+.card_top .img_2 {
+  background-image: url(../assets/img/Write-Reviews-Image.png);
+  height: 250px;
+}
+.card_top .img_3 {
+  background-image: url(../assets/img/Connect-Image.png);
+  height: 250px;
+}
+.card_top .blue {
+  background-color: #0a63ad;
+  height: 143px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
