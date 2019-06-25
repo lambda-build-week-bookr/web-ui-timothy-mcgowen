@@ -3,13 +3,14 @@
 
 <head>
   <title>Bookr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./favicon.ico" />
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
 </head>
 
 <body>
   <!-- Page wrapper -->
-  <div id="page-wrapper">
+  <div class="page-wrapper">
     <!-- Header -->
     <header id="header" class="alt">
       <!-- Banner -->
@@ -19,7 +20,7 @@
           <nav class="nav">
             <!-- <img src="" alt=""> Add gradient of the base blue color  -->
             <a href="#" class="font-logo">Bookr</a>
-            <ul class="#">
+            <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">Sign In</a></li>
               <li><a href="#">Sign Up</a></li>
@@ -46,6 +47,7 @@
     <!-- Main -->
     <section>
       <!-- Upper Section 1, Explains what the App/Web App is and what it does -->
+      <div class="black_line"></div>
       <section>
         <!-- This section will have the first info blurb, be sure to style the line thing -->
         <div class="below-header">
@@ -59,9 +61,10 @@
           </p>
         </div>
       </section>
+      <div class="black_line"></div>
       <!-- Upper Section 2, Break down of the three main goals of the app, Read Reviews, Write Reviews, Connect on Social  -->
       <section>
-        <div class="card_top">
+        <div class="card_top">  <!-- main-top.less -->
           <div class="img_1">
             <h2>Read Reviews</h2>
           </div>
@@ -91,7 +94,7 @@
           </div>
           <div class="blue">
             <p>
-              Join Bookr Premium to post updates, share lessons plans, and
+              Join Bookr Premium to post updates, share lessons plans,<br> and
               create book lists
             </p>
           </div>
@@ -101,15 +104,17 @@
       <!-- Upper Section 3, Shows the target Audiance giving reviews that push the three main goals of the app, Read Reviews, Write Reviews, Connect on Social  -->
       <section>
         <!-- Another Three card section with different style content -->
-        <h2>What people think</h2>
-        <div>
-          <div>
-            <div>
-              <img src="/assets/img/Marina-Picture.png" alt="" />
-            </div>
-            <div>
-              <h3>Marina K.</h3>
-              <h2>5th Grade Teacher</h2>
+        <h2 class="h2-quickfix_">What people think</h2>
+        <div class="large-card"> <!-- upper-section-2.less  -->
+          <div class="section-3">
+            <div class="parent">
+              <div>
+                <img src="assets/img/Marina-Picture.png" alt="" />
+              </div>
+              <div>
+                <h3>Marina K.</h3>
+                <h2>5th Grade Teacher</h2>
+              </div>
             </div>
             <div>
               <p>
@@ -119,13 +124,15 @@
               </p>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="assets/img/John Image.png" alt="" />
-            </div>
-            <div>
-              <h3>John B.</h3>
-              <h2>12th Grade Teacher</h2>
+          <div class="section-3">
+            <div class="parent">
+              <div>
+                <img src="assets/img/John-Image.png" alt="" />
+              </div>
+              <div>
+                <h3>John B.</h3>
+                <h2>12th Grade Teacher</h2>
+              </div>
             </div>
             <div>
               <p>
@@ -136,16 +143,19 @@
               </p>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="assets/img/Julia Image.png" alt="" />
+          <div class="section-3">
+            <div class="parent">
+              <div>
+                <img src="assets/img/Julia-Image.png" alt="" />
+              </div>
+              <div>
+                <h3>Julia M.</h3>
+                <h2>College Student</h2>
+              </div>
             </div>
             <div>
-              <h3>Julia M.</h3>
-              <h2>College Student</h2>
-            </div>
-            <div>
-              <p>
+              <p id="quick-fix">
+                <!-- Last Child wasn't working as expected so I did a quick fix.-->
                 A friend recommended this app to me, and I cannot stress how
                 thankful I am! Now, before I enroll in a class, I can see what
                 other students and teachers think of the book before I make a
@@ -155,8 +165,9 @@
           </div>
         </div>
       </section>
+      <div class="black_line"></div>
       <!-- Call to Action -->
-      <section>
+      <section class="call-2-action">
         <p>
           Create an account and never miss the next big book in education
           again!
@@ -166,30 +177,19 @@
     </section>
 
     <!-- Footer -->
-    <section id="footer" class="wrapper">
-      <ul class="#">
-        <li>
-          <a href="#" class="#"><span class="#">twitter.com/untitled</span></a>
-        </li>
-        <li>
-          <a href="#" class="#"><span class="#">facebook.com/untitled</span></a>
-        </li>
-        <li>
-          <a href="#" class="#"><span class="#">instagram.com/untitled</span></a>
-        </li>
-        <li>
-          <a href="#" class="#"><span class="#">contact@untitled.tld</span></a>
-        </li>
-      </ul>
+    <section class="social-card">
+      <a href="#" class="social-icons"><img src="assets/img/facebook.svg" alt="" />
+      </a>
+      <a href="#" class="social-icons"><img src="assets/img/facebook.svg" alt="" /></a>
+      <a href="#" class="social-icons"><img src="assets/img/facebook.svg" alt="" /></a>
+      <a href="#" class="social-icons"><img src="assets/img/facebook.svg" alt="" /></a>
     </section>
 
     <!-- Copyright -->
-    <section class="wrapper style2 copyright">
-      <div class="inner">
-        <p>&copy;2019 Bookr</p>
-        <p>Terms of Service</p>
-        <p>Private Policy</p>
-      </div>
+    <section class="copyright">
+      <p>&copy;2019 Bookr</p>
+      <p>Terms of Service</p>
+      <p>Private Policy</p>
     </section>
   </div>
 
