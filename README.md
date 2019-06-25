@@ -11,7 +11,7 @@ About Us: This page will be designed without a design files, but using the style
 ##MAIN PAGE##
 
 _[X]Set up the basic Element structure
-_[ ]Get the Basic layout Styles finished
+_[X]Get the Basic layout Styles finished
 _[ ]Fine tune the CSS styles
 _[ ]Fine tune the Responsiveness \*[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
 
