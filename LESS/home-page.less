@@ -4,29 +4,48 @@
 }
 
 body {
-    background-color: lighten(@bookr-bronze, 45%);
+    background-color: rgb(192, 50, 104);
+
 }
 
-#page-wrapper {
+.page-wrapper {
     margin-right: auto;
     margin-left: auto;
 
-    max-width: 375px;
+    min-width: 375px;
+    width: 375px;
 
-    padding-right: 0;
-    padding-left: 0;
+    background-color: lighten(@bookr-bronze, 55%);
 }
 
 
 
 .banner {
-    background-image: url(../assets/img/Hero-banner-image.png);
+    background-image: url(../assets/img/Hero-banner-image.jpg);
     height: 377px;
+
+    background-size: 375px 377px;
 }
 
 .black_line {
-    margin-right: 20px;
-    margin-left: 20px;
-    border-bottom: 1px solid @bookr-grey;
-    height: 25px;
+    margin: 40px 20px;
+    border-bottom: 2px solid lighten(@bookr-grey, 45%);
+
+}
+
+
+button {
+    background-color: @bookr-orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.h2-quickfix_ {
+    margin-left: 25px;
+    color: @bookr-grey;
 }
