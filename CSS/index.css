@@ -415,6 +415,48 @@ button {
     margin-left: 0;
   }
 }
+.about .banner_about {
+  background-image: url(../assets/img/herogirl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 377px;
+  background-color: black;
+}
+@media (min-width: 900px) {
+  .about .banner_about {
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+}
+.about .header-content {
+  margin-top: 200px;
+}
+@media (min-width: 900px) {
+  .about .header-content .h-top h1 {
+    font-size: 2.6rem;
+  }
+}
+.about button {
+  display: none;
+}
+.about .circle {
+  border-radius: 175px;
+}
+.about .section-3 {
+  width: 350px;
+}
+.about .flex-about {
+  display: flex;
+  flex-direction: column;
+}
 .nav {
   height: 56px;
   background-image: linear-gradient(rgba(24, 61, 112, 0.781), rgba(255, 255, 255, 0));
@@ -749,4 +791,64 @@ button {
   font-size: 0.9rem;
   text-align: right;
   color: #464646;
+}
+.tabs {
+  width: 100%;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.tabs .tabs-links {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  justify-content: space-evenly;
+  background-color: white;
+}
+@media (min-width: 900px) {
+}
+.tabs .tabs-link {
+  padding: 20px 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  background-color: #ff8533;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  .tabs .tabs-link {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+.tabs .tabs-link:hover {
+  background-color: #063A65;
+  color: #464646;
+}
+.tabs .tabs-link-selected {
+  border-right: 1px solid #ff8533;
+  background-color: #464646;
+  border-radius: 10px;
+  color: white;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: white;
 }
