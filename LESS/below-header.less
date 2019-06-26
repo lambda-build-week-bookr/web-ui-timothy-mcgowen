@@ -5,15 +5,29 @@
     margin: 25px 18px;
     color: lighten(@bookr-grey, 15%);
 
+    @media @desktop {
+        margin: 0;
+    }
+
     h2 {
         font-size: 1.3rem;
         padding-top: 20px;
         padding-bottom: 20px;
+
+        @media @desktop {
+            padding-top: 0;
+            font-size: 2.1rem;
+        }
     }
 
     p {
         font-size: 1.3rem;
         padding-bottom: 20px;
         padding-top: 10px;
+
+        @media @desktop {
+            font-size: 1.8rem;
+            padding-bottom: 0;
+        }
     }
 }

@@ -2,6 +2,11 @@
     // background-color: rgba(0, 0, 50.2, .5);
     color: white;
     margin-top: 95px;
+
+    @media @desktop {
+        margin-top: 195px;
+    }
+
     // margin-left: 20px;
     // margin-right: 10px;
     .flex(row, space-around, flex-end);
@@ -12,9 +17,19 @@
         margin-top: -20px;
         margin-bottom: 20px;
 
+        p {
+            @media @desktop {
+                font-size: 1.7rem;
+            }
+        }
+
         h1 {
             font-size: 2.0rem;
             text-shadow: 2px 2px 4px #00000060;
+
+            @media @desktop {
+                font-size: 2.2rem;
+            }
         }
     }
 

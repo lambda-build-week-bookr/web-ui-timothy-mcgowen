@@ -355,10 +355,31 @@ template {
   max-width: 375px;
   background-color: #ffffff;
 }
+@media (min-width: 900px) {
+  .page-wrapper {
+    max-width: 675px;
+  }
+}
 .banner {
   background-image: url(../assets/img/Hero-banner-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 377px;
   background-size: 375px 377px;
+}
+@media (min-width: 900px) {
+  .banner {
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
 }
 .black_line {
   margin: 40px 20px;
@@ -378,9 +399,21 @@ button {
   display: inline-block;
   border-radius: 10px;
 }
+@media (min-width: 900px) {
+  button {
+    padding: 10px 40px;
+    font-size: 1.5rem;
+  }
+}
 .h2-quickfix_ {
   margin-left: 25px;
   color: #464646;
+}
+@media (min-width: 900px) {
+  .h2-quickfix_ {
+    font-size: 2rem;
+    margin-left: 0;
+  }
 }
 .nav {
   height: 56px;
@@ -403,6 +436,12 @@ button {
   font-size: 1.9rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+@media (min-width: 900px) {
+  .nav .font-logo {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
 .nav ul {
   display: flex;
   flex-direction: row;
@@ -411,6 +450,13 @@ button {
   margin-left: 20px;
   margin-right: 20px;
   width: 80%;
+}
+@media (min-width: 900px) {
+  .nav ul {
+    width: 50%;
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
 }
 .nav ul a {
   color: white;
@@ -424,14 +470,29 @@ button {
   justify-content: space-around;
   align-items: flex-end;
 }
+@media (min-width: 900px) {
+  .header-content {
+    margin-top: 195px;
+  }
+}
 .header-content .h-top {
   width: 50%;
   margin-top: -20px;
   margin-bottom: 20px;
 }
+@media (min-width: 900px) {
+  .header-content .h-top p {
+    font-size: 1.7rem;
+  }
+}
 .header-content .h-top h1 {
   font-size: 2rem;
   text-shadow: 2px 2px 4px #00000060;
+}
+@media (min-width: 900px) {
+  .header-content .h-top h1 {
+    font-size: 2.2rem;
+  }
 }
 .below-header {
   display: flex;
@@ -442,20 +503,60 @@ button {
   margin: 25px 18px;
   color: #6c6c6c;
 }
+@media (min-width: 900px) {
+  .below-header {
+    margin: 0;
+  }
+}
 .below-header h2 {
   font-size: 1.3rem;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (min-width: 900px) {
+  .below-header h2 {
+    padding-top: 0;
+    font-size: 2.1rem;
+  }
 }
 .below-header p {
   font-size: 1.3rem;
   padding-bottom: 20px;
   padding-top: 10px;
 }
-.card_top {
+@media (min-width: 900px) {
+  .below-header p {
+    font-size: 1.8rem;
+    padding-bottom: 0;
+  }
+}
+#desktop {
+  display: none;
+}
+@media (min-width: 900px) {
+  #desktop {
+    display: inline;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .rows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.rows .card_top {
   color: white;
 }
-.card_top h2 {
+@media (min-width: 900px) {
+  .rows .card_top {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+.rows .card_top h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -464,25 +565,51 @@ button {
   background-image: linear-gradient(rgba(6, 58, 101, 0.698), rgba(6, 58, 101, 0.144));
   padding-left: 15px;
 }
-.card_top .img_1 {
+@media (min-width: 900px) {
+  .rows .card_top h2 {
+    height: auto;
+    padding: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.rows .card_top .img_1 {
   background-image: url(../assets/img/Read-Reviews-Image.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
 }
-.card_top .img_2 {
+@media (min-width: 900px) {
+  .rows .card_top .img_1 {
+    height: 150px;
+  }
+}
+.rows .card_top .img_2 {
   background-image: url(../assets/img/Write-Reviews-Image.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
 }
-.card_top .img_3 {
+@media (min-width: 900px) {
+  .rows .card_top .img_2 {
+    height: 150px;
+  }
+}
+.rows .card_top .img_3 {
   background-image: url(../assets/img/Connect-Image.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
 }
-.card_top .blue {
+@media (min-width: 900px) {
+  .rows .card_top .img_3 {
+    height: 150px;
+  }
+}
+.rows .card_top .blue {
   background-color: #0a63ad;
   height: 143px;
   display: flex;
@@ -493,10 +620,34 @@ button {
   text-align: center;
   font-size: 1.2rem;
 }
+@media (min-width: 900px) {
+  .rows .card_top .blue {
+    font-size: 0.9rem;
+    padding: 20px 5px;
+    height: auto;
+  }
+}
 .large-card {
   margin: 50px 25px;
   padding: 0 15px;
   border-left: 3px solid #ff8533;
+}
+@media (min-width: 900px) {
+  .large-card {
+    border-left: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    margin-top: 45px;
+  }
+}
+@media (min-width: 900px) {
+  .section-3 {
+    width: 31%;
+  }
 }
 .section-3 .parent {
   display: flex;
@@ -504,9 +655,28 @@ button {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 900px) {
+  .section-3 .parent img {
+    max-width: 100px;
+    height: auto;
+  }
+}
+@media (min-width: 900px) {
+  .section-3 .parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
 .section-3 .parent div h3 {
   font-size: 1.5rem;
   padding: 10px;
+}
+@media (min-width: 900px) {
+  .section-3 .parent div h3 {
+    font-size: 1.3rem;
+  }
 }
 .section-3 .parent div h2 {
   font-size: 1rem;
@@ -514,9 +684,19 @@ button {
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #6c6c6c;
 }
+@media (min-width: 900px) {
+  .section-3 .parent div h2 {
+    font-size: 0.7rem;
+  }
+}
 .section-3 p {
   color: #0a63ad;
   padding: 10px 0 50px 0;
+}
+@media (min-width: 900px) {
+  .section-3 p {
+    font-size: 0.9rem;
+  }
 }
 #quick-fix {
   padding-bottom: 0;
@@ -543,6 +723,14 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+}
+@media (min-width: 900px) {
+  .social-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
 }
 .social-card .social-icons img {
   width: 45px;

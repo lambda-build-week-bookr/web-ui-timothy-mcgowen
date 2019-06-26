@@ -1,41 +1,93 @@
-.card_top {
-    color: white;
+#desktop {
+    display: none;
 
-    h2 {
-        .flex(row, flex-start, center);
-        height: 56px;
-        // background-color: rgba(40, 40, 187, 0.5);
-        background-image: linear-gradient(rgba(6, 58, 101, 0.698), rgba(6, 58, 101, 0.144));
-        padding-left: 15px;
+    @media @desktop {
+        display: inline;
+        font-size: 1.5rem;
+    }
+}
+
+.rows {
+    @media @desktop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
-    .img_1 {
-        background-image: url(../assets/img/Read-Reviews-Image.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 250px;
-    }
+    .card_top {
 
-    .img_2 {
-        background-image: url(../assets/img/Write-Reviews-Image.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 250px;
-    }
+        color: white;
 
-    .img_3 {
-        background-image: url(../assets/img/Connect-Image.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 250px;
-    }
+        @media @desktop {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            width: 100%
+        }
 
-    .blue {
-        background-color: lighten(@bookr-blue, 15%);
-        height: 143px;
-        .flex(row, center, center);
-        padding: 25px;
-        text-align: center;
-        font-size: 1.2rem;
+        h2 {
+            .flex(row, flex-start, center);
+            height: 56px;
+            // background-color: rgba(40, 40, 187, 0.5);
+            background-image: linear-gradient(rgba(6, 58, 101, 0.698), rgba(6, 58, 101, 0.144));
+            padding-left: 15px;
+
+            @media @desktop {
+                height: auto;
+                padding: 10px;
+                font-size: 1.1rem;
+                .flex(row, center, center);
+            }
+        }
+
+        .img_1 {
+            background-image: url(../assets/img/Read-Reviews-Image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+
+            @media @desktop {
+                height: 150px;
+
+            }
+        }
+
+        .img_2 {
+            background-image: url(../assets/img/Write-Reviews-Image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+
+            @media @desktop {
+                height: 150px;
+
+            }
+        }
+
+        .img_3 {
+            background-image: url(../assets/img/Connect-Image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+
+            @media @desktop {
+                height: 150px;
+
+            }
+        }
+
+        .blue {
+            background-color: lighten(@bookr-blue, 15%);
+            height: 143px;
+            .flex(row, center, center);
+            padding: 25px;
+            text-align: center;
+            font-size: 1.2rem;
+
+            @media @desktop {
+                font-size: .9rem;
+                padding: 20px 5px;
+                height: auto;
+            }
+        }
     }
 }
