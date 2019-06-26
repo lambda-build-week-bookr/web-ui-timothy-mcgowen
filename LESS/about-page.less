@@ -21,11 +21,13 @@
     }
 
     .header-content {
+        //Fix-Later: The Text doesn't look right, make it work.
         margin-top: 200px;
 
         .h-top {
             @media @desktop {
                 h1 {
+                    //Controls the size of the Header on the Hero
                     font-size: 2.6rem;
                 }
             }
@@ -33,21 +35,83 @@
     }
 
     button {
+        //Turning off the call to action button on the about page.
         display: none;
     }
 
-
     .circle {
-        border-radius: 175px;
+        //Gives the personal photos the same look as the Marketing Page
+        border-radius: 100px;
     }
 
     .section-3 {
+        //Setting the width of the tab content area to achieve a middle alignment.
+        //Adjust this if you change the entire width of the page.
         width: 350px;
     }
 
-    .flex-about {
-        display: flex;
-        flex-direction: column;
+    // ---------------------- Tabs Styling --------------------------------
+    .tabs {
 
+        .tabs-items {
+            //Adds Space between the UI bar and the content
+            padding-top: 60px;
+        }
+
+        .tabs-item {
+            //Starts the content spaces off hidden
+            display: none;
+        }
+
+        .tabs-item-selected {
+            // flex-wrap: wrap;
+            // margin: auto;
+            .flex(row, center, center);
+        }
+
+        .tabs-links {
+            margin-top: 25px;
+            flex-wrap: wrap;
+            margin: 25px auto;
+            .flex(row, space-evenly, center);
+
+            @media @desktop {}
+
+            background-color: white;
+        }
+
+        .tabs-link {
+            //Set's up the styles for the UI buttons that tabs to seperate profiles
+            padding: 20px 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            @media @desktop {
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+
+            font-size: 24px;
+            background-color: @bookr-orange;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken(@bookr-orange, 15%);
+                color: white;
+            }
+        }
+
+        .tabs-link-selected {
+            border-right: 1px solid @bookr-orange;
+            background-color: darken(@bookr-orange, 20%);
+            border-radius: 10px;
+            color: white;
+
+            &:hover {
+                background-color: lighten(@bookr-orange, 20%);
+            }
+        }
     }
 }

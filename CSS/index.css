@@ -448,14 +448,61 @@ button {
   display: none;
 }
 .about .circle {
-  border-radius: 175px;
+  border-radius: 100px;
 }
 .about .section-3 {
   width: 350px;
 }
-.about .flex-about {
+.about .tabs .tabs-items {
+  padding-top: 60px;
+}
+.about .tabs .tabs-item {
+  display: none;
+}
+.about .tabs .tabs-item-selected {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about .tabs .tabs-links {
+  margin-top: 25px;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+.about .tabs .tabs-link {
+  padding: 20px 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  background-color: #ff8533;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  .about .tabs .tabs-link {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+.about .tabs .tabs-link:hover {
+  background-color: #e55c00;
+  color: white;
+}
+.about .tabs .tabs-link-selected {
+  border-right: 1px solid #ff8533;
+  background-color: #cc5200;
+  border-radius: 10px;
+  color: white;
+}
+.about .tabs .tabs-link-selected:hover {
+  background-color: #ffc299;
 }
 .nav {
   height: 56px;
@@ -791,64 +838,4 @@ button {
   font-size: 0.9rem;
   text-align: right;
   color: #464646;
-}
-.tabs {
-  width: 100%;
-}
-.tabs .tabs-items {
-  width: 100%;
-  height: auto;
-  padding-top: 60px;
-}
-.tabs .tabs-item {
-  display: none;
-}
-.tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-.tabs .tabs-item-selected {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-}
-.tabs .tabs-links {
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 25px auto;
-  justify-content: space-evenly;
-  background-color: white;
-}
-@media (min-width: 900px) {
-}
-.tabs .tabs-link {
-  padding: 20px 30px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  background-color: #ff8533;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-}
-@media (min-width: 900px) {
-  .tabs .tabs-link {
-    margin-right: 0px;
-    margin-bottom: 0px;
-  }
-}
-.tabs .tabs-link:hover {
-  background-color: #063A65;
-  color: #464646;
-}
-.tabs .tabs-link-selected {
-  border-right: 1px solid #ff8533;
-  background-color: #464646;
-  border-radius: 10px;
-  color: white;
-}
-.tabs .tabs-link-selected:hover {
-  background-color: white;
 }
