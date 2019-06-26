@@ -415,6 +415,38 @@ button {
     margin-left: 0;
   }
 }
+.about .banner_about {
+  background-image: url(../assets/img/herogirl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 377px;
+  background-color: black;
+}
+@media (min-width: 900px) {
+  .about .banner_about {
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+}
+.about .header-content {
+  margin-top: 200px;
+}
+@media (min-width: 900px) {
+  .about .header-content .h-top h1 {
+    font-size: 2.6rem;
+  }
+}
+.about button {
+  display: none;
+}
 .nav {
   height: 56px;
   background-image: linear-gradient(rgba(24, 61, 112, 0.781), rgba(255, 255, 255, 0));

@@ -1,0 +1,38 @@
+.about {
+    .banner_about {
+        background-image: url(../assets/img/herogirl.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 377px;
+        background-color: black;
+
+        @media @desktop {
+            background-color: #cccccc;
+            /* Used if the image is unavailable */
+            height: 500px;
+            /* You must set a specified height */
+            background-position: center;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Do not repeat the image */
+            background-size: cover;
+            /* Resize the background image to cover the entire container */
+        }
+    }
+
+    .header-content {
+        margin-top: 200px;
+
+        .h-top {
+            @media @desktop {
+                h1 {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+
+    button {
+        display: none;
+    }
+}
