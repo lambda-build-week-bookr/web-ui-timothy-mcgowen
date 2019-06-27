@@ -8,12 +8,16 @@ About Us: This page will be designed without a design files, but using the style
 
 ###########---------Project Checklist-----------#################
 
-##MAIN PAGE##
+##MARKETING PAGE##
 
-_[X]Set up the basic Element structure
-_[X]Get the Basic layout Styles finished
-_[ ]Fine tune the CSS styles
-_[ ]Fine tune the Responsiveness \*[ ]Final touches, Connect any links, fix any bugs, test of several browsers.
+This page is the face of the project, and the first thing users see when they arrive. As of June 27th, 2019 it has both mobile and tablet versions, but not desktop optimization. Nothing will break at higher resolutions, because of the automatic margins set up, but it won't look appealing at larger views without the need to zoom.
+
+Projects Future Goals
+
+_[ ] Set up desktop Responsiveness.
+_[ ] Figure out how to make a triangle that enters the Hero Banner horizontally and resizes along with the screen.
+_[ ] Better match the style of the home page with the about page.
+_[ ] Figure out if any additional pages would help the site.
 
 #Bookr PROJECT NAME
 
