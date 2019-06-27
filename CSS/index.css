@@ -437,7 +437,8 @@ button {
   }
 }
 .about .header-content {
-  margin-top: 200px;
+  margin-top: 180px;
+  width: 900px;
 }
 @media (min-width: 900px) {
   .about .header-content .h-top h1 {
@@ -533,6 +534,7 @@ button {
 }
 @media (min-width: 900px) {
   .about .tabs .tabs-link {
+    padding: 20px 20px;
     margin-right: 0px;
     margin-bottom: 0px;
   }
