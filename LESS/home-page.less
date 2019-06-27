@@ -3,11 +3,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body {
-    // background-color: rgb(192, 50, 104);
-
-}
-
+//Wrapper that holds everything within the Size I choose.
 .page-wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -18,10 +14,220 @@ body {
         max-width: 675px;
     }
 
-
-    background-color: lighten(@bookr-bronze, 55%);
+    //Trying to add the color that is shown in the design. Needs work.
+    // background-color: lighten(@bookr-bronze, 40%);
 }
 
+//Nav Bar Styling
+.nav {
+    height: 56px;
+    background-image: linear-gradient(rgba(24, 61, 112, 0.781), rgba(255, 255, 255, 0));
+    .flex(row, space-around, center);
+
+    //Styling for the Font Logo
+    .font-logo {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 10%;
+
+        text-decoration: none;
+        font-size: 1.9rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+
+        @media @tablet {
+            //Adjusting to make it fit right
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+    }
+
+    //Nav bar list Items
+    ul {
+        .flex(row, space-around, center);
+        margin: auto 20px;
+        width: 80%;
+
+        @media @tablet {
+            width: 50%;
+            margin-right: 0;
+            font-size: 1.2rem;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+//Header-Hero Text and Button content
+.header-content {
+    color: white;
+    margin-top: 95px;
+
+    @media @tablet {
+        margin-top: 195px;
+    }
+
+    .flex(row, space-around, flex-end);
+
+    .h-top {
+        width: 50%;
+        //Added a negative margin to adjust the button into a better spot.
+        margin-top: -20px;
+        margin-bottom: 20px;
+
+        p {
+            @media @tablet {
+                font-size: 1.7rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.0rem;
+            text-shadow: 2px 2px 4px #00000060;
+
+            @media @tablet {
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+}
+
+//Text blurb Styling below header
+.below-header {
+    .flex(column, center, center);
+    text-align: center;
+
+    margin: 25px 18px;
+    color: lighten(@bookr-grey, 15%);
+
+    @media @tablet {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @media @tablet {
+            padding-top: 0;
+            font-size: 2.1rem;
+        }
+    }
+
+    p {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+        padding-top: 10px;
+
+        @media @tablet {
+            font-size: 1.8rem;
+            padding-bottom: 0;
+        }
+    }
+}
+
+//Added this after we got a desktop version for the UX designer that included added text. 
+// This hides the added content from the mobile version.
+#desktop {
+    display: none;
+
+    @media @tablet {
+        display: inline;
+        font-size: 1.5rem;
+    }
+}
+
+
+.rows {
+    @media @tablet {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .card_top {
+        color: white;
+
+        @media @tablet {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            width: 100%
+        }
+
+        h2 {
+            .flex(row, flex-start, center);
+            height: 56px;
+            // background-color: rgba(40, 40, 187, 0.5);
+            background-image: linear-gradient(rgba(6, 58, 101, 0.698), rgba(6, 58, 101, 0.144));
+            padding-left: 15px;
+
+            @media @tablet {
+                height: auto;
+                padding: 10px;
+                font-size: 1.1rem;
+                .flex(row, center, center);
+            }
+        }
+
+        .img_1 {
+            background-image: url(../assets/img/Read-Reviews-Image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+
+            @media @tablet {
+                height: 150px;
+
+            }
+        }
+
+        .img_2 {
+            background-image: url(../assets/img/Write-Reviews-Image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+
+            @media @tablet {
+                height: 150px;
+
+            }
+        }
+
+        .img_3 {
+            background-image: url(../assets/img/Connect-Image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+
+            @media @tablet {
+                height: 150px;
+
+            }
+        }
+
+        .blue {
+            background-color: lighten(@bookr-blue, 15%);
+            height: 143px;
+            .flex(row, center, center);
+            padding: 25px;
+            text-align: center;
+            font-size: 1.2rem;
+
+            @media @tablet {
+                font-size: .9rem;
+                padding: 20px 5px;
+                height: auto;
+            }
+        }
+    }
+}
 
 
 .banner {
@@ -83,5 +289,125 @@ button {
     @media @tablet {
         font-size: 2rem;
         margin-left: 0;
+    }
+}
+
+.large-card {
+    margin: 50px 25px;
+    padding: 0 15px;
+    border-left: 3px solid @bookr-orange;
+
+    @media @tablet {
+        border-left: none;
+        .flex(row, space-between, flex-start);
+        margin: 0;
+        width: 100%;
+        margin-top: 45px;
+    }
+}
+
+.section-3 {
+    @media @tablet {
+        width: 31%
+    }
+
+    .parent {
+        img {
+            @media @tablet {
+                max-width: 100px;
+                height: auto;
+            }
+        }
+
+        .flex(row, center, center);
+
+        @media @tablet {
+            .flex(row, center, flex-start)
+        }
+
+        div {
+            h3 {
+                font-size: 1.5rem;
+                padding: 10px;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                }
+            }
+
+            h2 {
+                font-size: 1rem;
+                color: @bookr-grey;
+                padding: 0 0 10px 10px;
+                border-bottom: 1px solid lighten(@bookr-grey, 15%);
+
+                @media @tablet {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+
+    p {
+        color: lighten(@bookr-blue, 15%);
+        padding: 10px 0 50px 0;
+
+        @media @tablet {
+            font-size: .9rem;
+        }
+    }
+}
+
+#quick-fix {
+    padding-bottom: 0;
+}
+
+.social-card {
+
+    width: 100%;
+    padding: 35px 35px 0 35px;
+
+
+    .flex(row, space-between, baseline);
+
+    @media @tablet {
+        .flex(row, space-evenly, baseline);
+
+    }
+
+    .social-icons {
+
+        img {
+            width: 45px;
+            fill: red;
+        }
+    }
+}
+
+.copyright {
+    .flex(row, space-between, center);
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    p {
+        font-size: .9rem;
+        text-align: right;
+        color: @bookr-grey;
+    }
+}
+
+.call-2-action {
+    background: lighten(@bookr-blue, 5%);
+    color: white;
+    .flex(column, center, center);
+    padding: 20px;
+    height: 207px;
+
+
+    p {
+        padding-bottom: 30px;
+        font-size: 1.3rem;
+        text-align: center;
     }
 }
