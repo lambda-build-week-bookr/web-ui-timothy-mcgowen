@@ -48,14 +48,70 @@
         //Setting the width of the tab content area to achieve a middle alignment.
         //Adjust this if you change the entire width of the page.
         width: 350px;
+        background: lighten(@bookr-grey, 60%);
+        border-radius: 10px;
+        padding: 30px 30px 0 30px;
+        border-left: 1px solid @bookr-orange;
+
+        @media @desktop {
+            width: 600px;
+            display: flex;
+
+            p {
+                font-size: 1.1rem;
+
+            }
+        }
+
+        .parent {
+            width: 300px;
+
+            @media @desktop {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+
+                img {
+                    max-width: 200px;
+                    height: auto;
+                }
+
+
+
+                div {
+                    padding-right: 25px;
+                }
+            }
+        }
     }
 
     // ---------------------- Tabs Styling --------------------------------
-    .tabs {
+    .social-card-tabs {
 
+        width: 100%;
+        padding: 5px 0 0 0;
+
+
+        .flex(row, space-evenly, baseline);
+
+        @media @desktop {}
+
+        .social-icons {
+
+            img {
+                width: 25px;
+
+                @media @desktop {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .tabs {
         .tabs-items {
             //Adds Space between the UI bar and the content
-            padding-top: 60px;
+            padding-top: 15px;
         }
 
         .tabs-item {
@@ -64,8 +120,6 @@
         }
 
         .tabs-item-selected {
-            // flex-wrap: wrap;
-            // margin: auto;
             .flex(row, center, center);
         }
 
@@ -74,8 +128,6 @@
             flex-wrap: wrap;
             margin: 25px auto;
             .flex(row, space-evenly, center);
-
-            @media @desktop {}
 
             background-color: white;
         }
