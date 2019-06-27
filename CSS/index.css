@@ -437,12 +437,21 @@ button {
   }
 }
 .about .header-content {
-  margin-top: 180px;
-  width: 900px;
+  margin-top: 130px;
+  width: 500px;
+}
+@media (min-width: 900px) {
+  .about .header-content {
+    margin-top: 180px;
+    width: 800px;
+  }
+}
+.about .header-content .h-top h1 {
+  font-size: 1.5rem;
 }
 @media (min-width: 900px) {
   .about .header-content .h-top h1 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 }
 .about button {

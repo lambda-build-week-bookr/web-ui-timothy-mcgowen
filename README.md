@@ -15,8 +15,11 @@ This page is the face of the project, and the first thing users see when they ar
 Projects Future Goals
 
 [ ] Set up desktop Responsiveness.
+
 [ ] Figure out how to make a triangle that enters the Hero Banner horizontally and resizes along with the screen.
+
 [ ] Better match the style of the home page with the about page.
+
 [ ] Figure out if any additional pages would help the site.
 
 #Bookr PROJECT NAME
