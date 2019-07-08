@@ -795,7 +795,7 @@ button {
   background: #dfdfdf;
   border-radius: 10px;
   padding: 30px 30px 0 30px;
-  border-left: 1px solid #ff8533;
+  border-left: 3px solid #ff8533;
 }
 @media (min-width: 900px) {
   .about .section-3 {
